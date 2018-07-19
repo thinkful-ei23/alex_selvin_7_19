@@ -1,5 +1,5 @@
 'use strict';
-/*eslint no-undef: "error"*/
+/* global $ */
 $('.thumbnail').click(function (event) {
   // event.preventDefault();
   // event.stopPropagation();
