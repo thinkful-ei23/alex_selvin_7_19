@@ -1,10 +1,11 @@
 'use strict';
-$('.thumbnail').click(function () {
-  console.log(this);
+/*eslint no-undef: "error"*/
+$('.thumbnail').click(function (event) {
   // event.preventDefault();
-  let target = event.target;
-  console.log(target);
+  // event.stopPropagation();
+  console.log(event.target.src);
   // const image = $(this.img).html();
   // console.log(image);
-  $('.hero').html(target);
+  $('.hero img').attr('src', event.target.src);
+ 
 });
