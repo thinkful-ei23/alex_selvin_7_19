@@ -1,8 +1,6 @@
 'use strict';
 
 
-
-
 $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
   console.log(this);
   event.preventDefault();
@@ -48,9 +46,3 @@ $('#js-shopping-list-form').on('submit', event => {
 
 
 const shoppingList = $('.shopping-list');
-
-
-
-// on click shopping-item-toggle
-// go to span parent with the class shopping item
-// toggle shopping-item__checked class
